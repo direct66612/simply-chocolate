@@ -135,3 +135,18 @@ a {
   justify-content: center;
   align-items: center;
 }
+.benefits {
+  background-color: #1e1823;
+}
+.benefits__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 70px;
+}
+.benefits__list-item {
+}
+.benefits__item-title {
+}
+.benefits__item-text {
+}
