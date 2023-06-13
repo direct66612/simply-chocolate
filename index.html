@@ -18,68 +18,74 @@
   </head>
   <body>
     <header class="header container">
-      <a class="logo" href="./index.html">
-        <span class="logo__italic">SIMPLY</span>CHOCOLATE
-        <svg class="logo__icon" width="24" height="24">
-          <use href="./images/icons.svg#logo-icon"></use>
-        </svg>
-      </a>
-      <nav class="header__menu">
-        <ul class="header__menu-list">
-          <li class="header__menu-item">
-            <a class="header__menu-item-link" href="#hero">Home</a>
+      <div class="header__inner">
+        <a class="logo" href="./index.html">
+          <span class="logo__italic">SIMPLY</span>CHOCOLATE
+          <svg class="logo__icon" width="24" height="24">
+            <use href="./images/icons.svg#logo-icon"></use>
+          </svg>
+        </a>
+        <nav class="header__menu">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a class="header__menu-item-link" href="#hero">Home</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-item-link" href="#about">How it's made?</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-item-link" href="#team"
+                >Chocolate is loved</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <ul class="header__social-list">
+          <li class="header__social-item">
+            <a href="#" class="header__social-link">
+              <svg class="header__social-item-icon" width="24px" height="24px">
+                <use href="./images/icons.svg#instagram-icon"></use>
+              </svg>
+            </a>
           </li>
-          <li class="header__menu-item">
-            <a class="header__menu-item-link" href="#about">How it's made?</a>
-          </li>
-          <li class="header__menu-item">
-            <a class="header__menu-item-link" href="#team"
-              >Chocolate is loved</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <ul class="header__social-list">
-        <li class="header__social-item">
-          <a href="#" class="header__social-link">
-            <svg class="header__social-item-icon" width="24px" height="24px">
-              <use href="./images/icons.svg#instagram-icon"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="header__social-item">
-          <a class="header__social-link" href="#">
-            <svg class="header__social-item-icon" width="24px" height="24px">
-              <use href="./images/icons.svg#twitter-icon"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </header>
-    <main class="main">
-      <section class="hero container" id="hero">
-        <h1 class="hero__title">
-          Treat yourself or a loved one to <br />our finest ingredients for a
-          moment of pure delight!
-        </h1>
-        <ul class="hero__menu-list">
-          <li class="hero__menu-item">
-            <button class="hero__menu-btn">Buy now</button>
-          </li>
-          <li class="hero__menu-item">
-            <a class="hero__menu-link" href="#about">How it's made</a>
-          </li>
-          <li class="hero__menu-item">
-            <a class="hero__scroll" href="#taste"
-              >scroll down
-              <div class="hero__scroll-inner">
-                <svg class="hero__scroll-icon" width="22" height="22">
-                  <use href="./images/icons.svg#scroll-icon"></use>
-                </svg>
-              </div>
+          <li class="header__social-item">
+            <a class="header__social-link" href="#">
+              <svg class="header__social-item-icon" width="24px" height="24px">
+                <use href="./images/icons.svg#twitter-icon"></use>
+              </svg>
             </a>
           </li>
         </ul>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero" id="hero">
+        <div class="container">
+          <div class="hero__inner">
+            <h1 class="hero__title">
+              Treat yourself or a loved one to <br />our finest ingredients for
+              a moment of pure delight!
+            </h1>
+            <ul class="hero__menu-list">
+              <li class="hero__menu-item">
+                <button class="hero__menu-btn">Buy now</button>
+              </li>
+              <li class="hero__menu-item">
+                <a class="hero__menu-link" href="#about">How it's made</a>
+              </li>
+              <li class="hero__menu-item">
+                <a class="hero__scroll" href="#taste"
+                  >scroll down
+                  <div class="hero__scroll-inner">
+                    <svg class="hero__scroll-icon" width="22" height="22">
+                      <use href="./images/icons.svg#scroll-icon"></use>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
       <section class="benefits" id="benefits">
         <div class="benefits__inner">
@@ -132,51 +138,115 @@
           </div>
         </div>
       </section>
-      <section class="taste container" id="taste">
-        <h2 class="taste__title">
-          IT ALL ADDS UP TO ONE EXCEPTIONAL
-          <span class="taste__title-span">TASTE</span> SENSATION
-        </h2>
-        <p class="taste__text">
-          At Simply Chocolate, we believe that the secret to exceptional
-          chocolate is in the details. From the sourcing of the finest
-          ingredients to the careful crafting of each individual piece, every
-          step of our process adds up to one exceptional taste sensation.
-        </p>
-        <ul class="taste__list">
-          <li class="taste__list-item">
+      <section class="taste" id="taste">
+        <div class="container">
+          <h2 class="taste__title">
+            IT ALL ADDS UP TO ONE EXCEPTIONAL
+            <span class="taste__title-span">TASTE</span> SENSATION
+          </h2>
+          <p class="taste__text">
+            At Simply Chocolate, we believe that the secret to exceptional
+            chocolate is in the details. From the sourcing of the finest
+            ingredients to the careful crafting of each individual piece, every
+            step of our process adds up to one exceptional taste sensation.
+          </p>
+          <ul class="taste__list">
+            <li class="taste__list-item">
+              <img
+                class="taste__item-img"
+                src="./images/taste-1.png"
+                alt="chocolate"
+                width="206"
+                height="160"
+              />
+              <p class="taste__item-text">MILK CHOCOLATE</p>
+            </li>
+            <li class="taste__list-item">
+              <img
+                class="taste__item-img"
+                src="./images/taste-2.png"
+                alt="milk"
+                width="206"
+                height="160"
+              />
+              <p class="taste__item-text">MILK</p>
+            </li>
+            <li class="taste__list-item">
+              <img
+                class="taste__item-img"
+                src="./images/taste-3.png"
+                alt="nuts"
+                width="206"
+                height="160"
+              />
+              <p class="taste__item-text">NUTS</p>
+            </li>
+            <li class="taste__list-item">
+              <img
+                class="taste__item-img"
+                src="./images/taste-4.png"
+                alt="semi sweet chocolate"
+                width="206"
+                height="160"
+              />
+              <p class="taste__item-text">SEMI - SWEET CHOCOLATE</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="container">
+          <h2 class="about__title">
+            HOW IT'S <span class="about__title-span">MADE?</span>
+          </h2>
+          <div class="about__inner">
             <img
-              class="taste__item-img"
-              src="./images/taste-1.jpg"
-              alt="chocolate"
+              class="about__img"
+              src="./images/about-bg.jpg"
+              alt="kitchen"
+              width="600"
+              height="400"
             />
-            <p class="taste__item-text">MILK CHOCOLATE</p>
-          </li>
-          <li class="taste__list-item">
-            <img
-              class="taste__item-img"
-              src="./images/taste-2.jpg"
-              alt="milk"
-            />
-            <p class="taste__item-text">MILK</p>
-          </li>
-          <li class="taste__list-item">
-            <img
-              class="taste__item-img"
-              src="./images/taste-3.jpg"
-              alt="nuts"
-            />
-            <p class="taste__item-text">NUTS</p>
-          </li>
-          <li class="taste__list-item">
-            <img
-              class="taste__item-img"
-              src="./images/taste-4.jpg"
-              alt="semi sweet chocolate"
-            />
-            <p class="taste__item-text">SEMI - SWEET CHOCOLATE</p>
-          </li>
-        </ul>
+            <div class="about__content">
+              <h4 class="about__content-title">
+                Try our chocolates today and discover the perfect balance of
+                flavor
+              </h4>
+              <ul class="about__content-list">
+                <li class="about__content-item">
+                  <p class="about__content-item-text">
+                    Heat the milk in a saucepan without bringing it to a boil.
+                    Add sugar and cocoa powder.
+                  </p>
+                </li>
+                <li class="about__content-item">
+                  <p class="about__content-item-text">
+                    At the same time, prepare a water bath. Melt the butter on
+                    it.
+                  </p>
+                </li>
+                <li class="about__content-item">
+                  <p class="about__content-item-text">
+                    "Mix" the milk mixture and already liquid butter. Mix
+                    thoroughly with a silicone spatula so that the mass becomes
+                    uniform and silky.
+                  </p>
+                </li>
+                <li class="about__content-item">
+                  <p class="about__content-item-text">
+                    Heat the mixture over low heat, letting it barely boil
+                  </p>
+                </li>
+                <li class="about__content-item">
+                  <p class="about__content-item-text">
+                    Pour the chocolate into special containers (can be replaced
+                    with ice molds). Allow to cool and harden.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="footer"></footer>
