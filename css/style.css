@@ -219,14 +219,64 @@ a {
   border-radius: 15px;
   padding: 28px 36px 28px 28px;
 }
-.taste__overlay {
+.taste__list-item:hover .taste__overlay,
+.taste__list-item:focus .taste__overlay {
+  transform: translateY(0%);
+}
+.taste__overlay-inner {
   position: relative;
   overflow: hidden;
+}
+.taste__overlay {
+  position: absolute;
   top: 0;
-  background-color: #1e1823;
+  left: 0;
+  transform: translateY(100%);
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .taste__overlay-title {
-  position: absolute;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: -0.03em;
+  margin-bottom: 8px;
+  color: #111111;
+}
+.taste__overlay-list-links {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+.taste__overlay-link-current {
+  background: #fd9222;
+  border-radius: 35px;
+  padding: 6px 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  color: #fff;
+}
+.taste__overlay-link-benefits {
+  padding: 6px 16px;
+  border: 1px solid #fd9222;
+  border-radius: 35px;
+  background: #fafafa;
+  color: #111111;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+}
+.taste__overlay-text {
+  color: #111111;
+  max-width: 230px;
 }
 .taste__item-img {
   object-fit: cover;
