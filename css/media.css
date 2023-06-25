@@ -55,6 +55,31 @@
     gap: 16px;
     flex-wrap: nowrap;
   }
+  .footer__inner {
+    padding: 50px 0 50px 0;
+  }
+  .footer__top {
+    flex-direction: row;
+    margin-bottom: 24px;
+    padding-bottom: 50px;
+  }
+  .footer__down {
+    flex-direction: row;
+  }
+  .footer__down-list {
+    flex-direction: row;
+    align-items: center;
+  }
+  .footer__down {
+    align-items: baseline;
+  }
+  .footer__top-title {
+    font-size: 28px;
+    margin-bottom: 0;
+  }
+  .footer__down-input {
+    width: 233px;
+  }
 }
 @media screen and (min-width: 1166px) {
   .container {
@@ -97,5 +122,8 @@
   }
   .team__content-box {
     max-width: 360px;
+  }
+  .footer__down-input {
+    width: 313px;
   }
 }
