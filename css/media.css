@@ -80,6 +80,33 @@
   .footer__down-input {
     width: 233px;
   }
+  .header__menu-list {
+    display: flex;
+  }
+  .header__social-list {
+    display: flex;
+  }
+  .mobile__btn {
+    display: none;
+  }
+  .hero__title {
+    max-width: 484px;
+    font-size: 28px;
+    padding-left: 40px;
+  }
+  .hero__menu-list {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .hero__menu-btn {
+    padding: 14px 40px;
+  }
+  .hero__menu-link {
+    padding: 14px 40px;
+  }
+  .hero__menu-list {
+    justify-content: space-between;
+  }
 }
 @media screen and (min-width: 1166px) {
   .container {

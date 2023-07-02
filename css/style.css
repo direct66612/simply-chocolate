@@ -84,19 +84,50 @@ a {
   background-color: transparent;
 }
 .mobile__menu {
-  max-width: 100%;
+  top: 0;
+  left: 0;
+  width: 100vw;
   height: 100vh;
   z-index: 999;
   position: fixed;
+  padding: 20px;
   background-color: #1e1823;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
 }
 .mobile__menu-btn {
   cursor: pointer;
   background-color: transparent;
   border: none;
+  margin-left: auto;
+  margin-bottom: 88px;
 }
 .mobile__menu-btn-icon {
   fill: #fff;
+}
+.mobile__social-list {
+  display: flex;
+  gap: 18px;
+}
+.mobile__social-item-icon {
+  fill: #fff;
+}
+.mobile__menu-list {
+  padding-left: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 50px;
+}
+.mobile__menu-link {
+  color: #fff;
+  font-size: 14px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
 }
 .hero__inner {
   background: linear-gradient(
@@ -111,27 +142,32 @@ a {
   border-radius: 30px;
 }
 .hero__title {
-  padding-top: 380px;
-  max-width: 484px;
+  padding: 380px 20px 0px 20px;
+  max-width: 299px;
   min-height: 102px;
   font-weight: 500;
   color: #fff;
   line-height: 1.21;
   letter-spacing: -0.03em;
-  font-size: 28px;
+  font-size: 20px;
   margin-bottom: 32px;
-  padding-left: 40px;
 }
 .hero__menu-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 14px;
   align-items: center;
   padding-bottom: 40px;
-  padding-left: 40px;
+  padding-left: 20px;
+}
+.hero__menu-list-inner {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
 }
 .hero__menu-btn {
   cursor: pointer;
-  padding: 14px 40px;
+  padding: 14px 22px;
   background-color: #fd9222;
   border: none;
   border-radius: 100px;
@@ -143,7 +179,7 @@ a {
   color: #fff;
   border: 1px solid #ffffff;
   border-radius: 100px;
-  padding: 14px 40px;
+  padding: 14px 17px;
   font-weight: 600;
 }
 .hero__scroll {
@@ -152,7 +188,6 @@ a {
   display: flex;
   align-items: center;
   gap: 14px;
-  margin-left: 585px;
 }
 .hero__scroll-inner {
   width: 38px;
@@ -534,6 +569,7 @@ a {
 }
 .modal {
   position: fixed;
+  overflow: auto;
   top: 0;
   left: 0;
   width: 100%;
@@ -547,7 +583,8 @@ a {
   left: 50%;
   position: absolute;
   transform: translate(-50%, -50%) scale(1);
-  width: 517px;
+  max-width: 517px;
+  width: calc(100% - 36px);
   min-height: 628px;
   background: #fafafa;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),

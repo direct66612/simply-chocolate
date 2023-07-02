@@ -57,24 +57,60 @@
             </a>
           </li>
         </ul>
-        <button class="mobile__btn" type="button">
+        <button class="mobile__btn" type="button" data-menu-open>
           <svg class="mobile__btn-icon" width="28" height="28">
             <use href="./images/icons.svg#modal-btn"></use>
           </svg>
         </button>
-        <div class="mobile__menu">
-          <div class="container">
-            <button class="mobile__menu-btn" type="button">
+        <div class="mobile__menu is-hidden" data-menu>
+          <div class="mobile__menu-inner">
+            <button class="mobile__menu-btn" type="button" data-menu-close>
               <svg class="mobile__menu-btn-icon" width="28" height="28">
                 <use href="./images/icons.svg#modal-btn"></use>
               </svg>
             </button>
+
+            <ul class="mobile__menu-list">
+              <li class="mobile__menu-item">
+                <a class="mobile__menu-link" href="#">Home</a>
+              </li>
+              <li class="mobile__menu-item">
+                <a class="mobile__menu-link" href="#">How it's made?</a>
+              </li>
+              <li class="mobile__menu-item">
+                <a class="mobile__menu-link" href="#">Chocolate is loved</a>
+              </li>
+            </ul>
           </div>
+          <ul class="mobile__social-list">
+            <li class="mobile__social-item">
+              <a href="#" class="mobile__social-link">
+                <svg
+                  class="mobile__social-item-icon"
+                  width="24px"
+                  height="24px"
+                >
+                  <use href="./images/icons.svg#instagram-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile__social-item">
+              <a class="mobile__social-link" href="#">
+                <svg
+                  class="mobile__social-item-icon"
+                  width="24px"
+                  height="24px"
+                >
+                  <use href="./images/icons.svg#twitter-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
     <main class="main">
-      <!-- <section class="hero" id="hero">
+      <section class="hero" id="hero">
         <div class="container">
           <div class="hero__inner">
             <h1 class="hero__title">
@@ -82,12 +118,14 @@
               a moment of pure delight!
             </h1>
             <ul class="hero__menu-list">
-              <li class="hero__menu-item">
-                <button class="hero__menu-btn">Buy now</button>
-              </li>
-              <li class="hero__menu-item">
-                <a class="hero__menu-link" href="#about">How it's made</a>
-              </li>
+              <div class="hero__menu-list-inner">
+                <li class="hero__menu-item">
+                  <button class="hero__menu-btn">Buy now</button>
+                </li>
+                <li class="hero__menu-item">
+                  <a class="hero__menu-link" href="#about">How it's made</a>
+                </li>
+              </div>
               <li class="hero__menu-item">
                 <a class="hero__scroll" href="#taste"
                   >scroll down
@@ -101,7 +139,7 @@
             </ul>
           </div>
         </div>
-      </section> -->
+      </section>
       <section class="benefits" id="benefits">
         <div class="benefits__inner">
           <div class="container">
@@ -488,5 +526,6 @@
       </div>
     </div>
     <script src="./js/main.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
